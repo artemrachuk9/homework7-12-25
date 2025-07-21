@@ -9,6 +9,9 @@ def get_days_from_today(date_str):
         return delta
     except ValueError:
         return " Неправильний формат дати. Використовуйте YYYY-MM-DD"
+print(get_days_from_today("2023-02-10"))  # Інший формат
+print(get_days_from_today("13.14.2000"))  # Некоректна дата
+print(get_days_from_today("2020/12/01"))  # Правильний формат 
 
 
 
